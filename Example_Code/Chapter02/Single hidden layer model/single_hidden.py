@@ -2,8 +2,6 @@ import tensorflow as tf
 import numpy as np
 import math
 
-%autoindent
-
 try:
     from tqdm import tqdm
 except ImportError:
@@ -11,7 +9,7 @@ except ImportError:
         return x
 
 # Load data
-data = np.load('data_with_labels.npz')
+data = np.load('../../data_with_labels.npz')
 train = data['arr_0']/255.
 labels = data['arr_1']
 
@@ -120,7 +118,7 @@ plt.colorbar()
 
 
 # Let's look at a subplot of some weights
-plt.figure(figsize(6,6))
+plt.figure(figsize=(6,6))
 f, plts = plt.subplots(4,8, sharex=True)
 for i in range(32):
     plts[i//8, i%8].pcolormesh(W1.eval()[:,i].reshape([36,36]))

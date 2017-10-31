@@ -1,6 +1,5 @@
 import tensorflow as tf
 import numpy as np
-%autoindent
 try:
     from tqdm import tqdm
 except ImportError:
