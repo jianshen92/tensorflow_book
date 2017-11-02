@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import math
-%autoindent
+
 try:
     from tqdm import tqdm
 except ImportError:

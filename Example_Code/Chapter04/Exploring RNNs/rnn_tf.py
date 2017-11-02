@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 import datetime
 import math
-%autoindent
+
 try:
     from tqdm import tqdm
 except ImportError:
